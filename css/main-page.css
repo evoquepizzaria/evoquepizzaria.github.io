@@ -1,0 +1,20 @@
+#phone-list {
+    padding-bottom: 10px;       
+}
+
+.phone-number {        
+    color: white;    
+    font-size: 12px;
+    font-weight: bold;    
+}
+
+.phone-number {        
+    color: white;    
+    font-size: 12px;
+    font-weight: bold;    
+}
+
+.phone-number:hover {    
+    color: yellow;
+    font-size: 100%;
+}

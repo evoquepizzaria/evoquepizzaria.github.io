@@ -1,0 +1,10 @@
+[
+    {
+        "id" : 0,
+        "name" : "Pizza 0",
+        "ingredients": ["A", "B", "C"],
+        "isSweet" : false,
+        "isPromotional": false,
+        "price": "40"
+    }
+]
