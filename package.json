@@ -1,0 +1,29 @@
+{
+  "name": "evoquepizzaria.github.io",
+  "version": "1.0.0",
+  "description": "Site da Pizzaria",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evoquepizzaria/evoquepizzaria.github.io.git"
+  },
+  "keywords": [
+    "site",
+    "static",
+    "html",
+    "pizzaria",
+    "evoque"
+  ],
+  "author": "Hugo Peres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evoquepizzaria/evoquepizzaria.github.io/issues"
+  },
+  "homepage": "https://github.com/evoquepizzaria/evoquepizzaria.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
