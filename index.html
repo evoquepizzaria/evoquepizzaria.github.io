@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main-page.css">
+    <link rel="stylesheet" href="/css/main-page-mobile.css" media="screen and (max-width: 768px)">
     <title> Evoque </title>
 </head>
 
@@ -20,7 +21,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #000">
 
         <a class="navbar-brand" href="#">
-            <img src="/images/logo.jpeg" width="200" height="50" alt="">
+            <img src="/images/logo.jpeg" width="200" height="42" alt="">
         </a>
 
         <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navBarNav" aria-controls="navBarNav"
@@ -29,7 +30,7 @@
         </button>
 
 
-        <div class="collapse navbar-collapse" id="navBarNav">
+        <!-- <div class="collapse navbar-collapse" id="navBarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a href="#" class="nav-link"> INICIO </a>
@@ -44,16 +45,14 @@
                     <a href="#" class="nav-link"> GALERIA </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> CONTATO </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"> LOCALIZAÇÃO </a>
+                    <a href="#" class="nav-link"> CONTATO</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link"> FAQ </a>
                 </li>
             </ul>
-        </div>
+        </div> -->
+
     </nav>
 
     <nav class="" style="background-color: #000">
@@ -73,9 +72,7 @@
                 </div>
             </div>
         </div>
-        <!-- Colocar referência do IFood -->
-        <!-- Colocar bandeiras dos cartões de credito -->
-    </nav>
+    </nav>   
 
     <div class="container" id='carousel'>
 
@@ -96,6 +93,16 @@
         </div>
 
     </div>
+
+    <div class="container">
+        <div id="about">
+            <img src="" alt="" />
+        </div>
+    </div>
+
+
+
+
 
     <!-- INICIO -->
     <!-- mostra uma capa que ocupa quase toda a tela com carrossel -->
@@ -123,19 +130,62 @@
     <!-- CONTATO -->
     <!-- Exibe menu que possibilita a escolha entre Duvidas, Sugestões, Reclamações e Corpo de mensagem-->
 
-    <footer>
-        <!-- Colocar copyright com data de criação - atual  -->
-        <!-- Google analytics -->
-        <!-- Colocar redes sociais no rodapé -->
-        <!-- https://www.instagram.com/pizzariaevoque/ -->
-        <!-- https://www.facebook.com/EvoquePizza/ -->
-    </footer>
+    <div class="container">
+
+        <footer class="footer">
+
+            <div class="row">
+
+                <div class="col">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="social-title">
+                            Confira nosso trabalho nas rede sociais:
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="social-button">
+                            <a href="https://www.facebook.com/EvoquePizza/" target="_blank">
+                                <img class="social-icon" src="/icons/facebook.png" href="#" />
+                            </a>
+                        </div>
+                        <div class="social-button">
+                            <a href="https://www.instagram.com/pizzariaevoque/" target="_blank">
+                                <img class="social-icon" src="/icons/instagram.png" href="#" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <span class="ifood-title"> Peça também pelo </span>
+                        <a href="https://www.ifood.com.br/delivery/sao-bernardo-do-campo-sp/evoque-pizzaria--hamburgueria-centro" target="_blank">
+                            <img class="ifood-logo" src="/icons/ifood.png" alt="ifood" />
+                        </a>
+                    </div>
+                </div>
 
 
+                <div class="col">
+                    <img class="credit-card" src="/icons/visa.png" alt="">
+                    <img class="credit-card" src="/icons/master-card.ico" alt="">
+                </div>
+
+            </div>
 
 
+            <div class="copyright">
+                <span>
+                    Copyright &copy 2017 Evoque Pizzaria, Todos os direitos reservados
+                </span>
+            </div>
 
 
+        </footer>
+
+    </div>
+
+    <!-- Google analytics -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

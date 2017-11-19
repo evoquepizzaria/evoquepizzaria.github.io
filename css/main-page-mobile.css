@@ -1,0 +1,54 @@
+.phone-number {        
+    font-size: 12px;        
+}
+
+.phone-number > img{
+    width: 15px;
+    height: 15px;
+}        
+
+.credit-card {
+    width: 24px;
+    max-height: 100%;
+}
+
+
+.social-icon {
+    width: 35px;
+    max-height: 35px;    
+}
+
+.copyright {    
+    padding-bottom: 1%;
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.footer {
+    font-size: 10px;
+}
+
+.social-title, .ifood-title {
+    display: none;
+}
+
+
+.social-button {
+    margin-top: 10%;    
+    margin-left: 10%;    
+}
+
+
+.ifood-logo {    
+    margin-top: 25%;    
+    width: 50px;
+    max-height: 100%;    
+}
+
+.credit-card {
+    width: 35px;
+    max-height: 100%;
+    margin-top: 10%;
+}
+

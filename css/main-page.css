@@ -1,35 +1,36 @@
 html {
-
+    height: 100%;
 }
 
 body {
     background-color: rgb(119, 162, 163);
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
 }
 
-
-@media screen and (max-width: 600px){
-    .phone-number {        
-        font-size: 12px;        
-    }
+.phone-number {        
+    font-size: 42px;        
+}
     
-    .phone-number > img{
-        width: 15px;
-        height: 15px;
-    }        
+.phone-number > img{
+    width: 42px;
+    height: 42px;
 }
 
 
-@media screen and (min-width: 600px){
-    .phone-number {        
-        font-size: 42px;        
-    }
-    
-    .phone-number > img{
-        width: 42px;
-        height: 42px;
-    }        
-}
 
+.social-icon {
+    width: 50px;
+    max-height: 50px;
+}        
+
+.copyright {    
+    padding-bottom: 0.5%;
+    width: 100%;    
+    text-align: center;
+    margin-top: 1.5%;
+}
 
 .phone-number {    
     color: white;
@@ -50,3 +51,40 @@ body {
     margin-top:1%;
 }
 
+.footer {    
+    color: white;    
+    position: absolute;
+    background-color: black;
+    width: 99.2%;    
+    margin: 0 auto;
+    left: 0;
+    margin-top: 0.5%;
+}
+
+
+.social-title {    
+    margin-top: 1%;
+}
+
+.social-button {
+    margin-top: 1%;    
+}
+
+
+.ifood-logo {
+    margin-left: 5%;
+    margin-top: 1.5%;
+    background-color: red;
+    width: 80px;
+    max-height: 100%;    
+}
+
+#cards-container {
+    color: white;
+    font-size: 12px;
+}
+
+.credit-card {
+    width: 50px;
+    max-height: 100%;
+}
