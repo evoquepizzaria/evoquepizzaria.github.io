@@ -1,0 +1,27 @@
+[
+    {
+        "id" : 0,
+        "name" : "Pizza 0",
+        "ingredients": ["A", "B", "C"],
+        "category" : "Lanches Light",
+        "isPromotional": false,
+        "price": "40"
+    },
+    {
+        "id" : 0,
+        "name" : "Pizza 0",
+        "ingredients": ["A", "B", "C"],
+        "category" : "Lanches Light",
+        "isPromotional": false,
+        "price": "40"
+    },
+    {
+        "id" : 0,
+        "name" : "Pizza 0",
+        "ingredients": ["A", "B", "C"],
+        "category" : "Lanches",
+        "isPromotional": false,
+        "price": "40"
+    }
+
+]

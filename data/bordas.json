@@ -1,3 +1,11 @@
-[{
-    
-}]
+[
+    {
+        "id" : 0,
+        "name" : "Pizza 0",
+        "ingredients": ["A", "B", "C"],
+        "category" : "Bordas",
+        "isPromotional": false,
+        "price": "40"
+    }
+
+]

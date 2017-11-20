@@ -28,10 +28,45 @@ function loadCarousel() {
 }
 
 function loadMenu(plates) {
-    var menu = [];
-    request('/data/pizzas.json', function(data) {
-        
-    });
+    var requestList = ['pizzas', 'lanches', 'bebidas', 'bordas'];
+    var menuList = [];
+    var groupIndex = 1;
+    var headings = []
+    for (var i = 0; i < requestList.length; i++) {
+        var currentRequest = requestList[i];
+        request('/data/' + currentRequest + '.json', function (data) {
+            var dataList = JSON.parse(data);
+            var grouped = groupBy(dataList, 'category');
+            Object.keys(grouped).forEach(function (c, i) {
+                // console.log(c, groupIndex);                
+                var heading = $('<div></div>', { "class": "card-header", "id": "heading-" + groupIndex, "role": "tab" });
+                heading.append($('<h5 class="mb-0"> <a data-toggle="collapse" href="#collapse-' + groupIndex + '" "aria-expanded="false" aria-controls="collapse-1">' + c + ' </a></h5>'));
+                $('#accordion').append(heading);
+                var itemList = $('<div/>', { "class" : "item-list"});
+                itemList.append(' '+
+                    '<div id="collapse-' + groupIndex + '" class="collapse" role="tabpanel" aria-labelledby="heading-' + groupIndex + '" data-parent="#accordion">' +
+                    '<div class="card-body">' +
+                    '</div>' +
+                    '</div>');
+                heading.append(itemList);
+                grouped[c].forEach(function (i) {
+                    var item = $('<div/>', { "class": "menu-container" });
+                    item.html(
+                        '<div class="d-flex"> ' +
+                        '<div class="p-2 item-name">' + i.id + ' ' + i.name + ' </div>' +
+                        '<div class="ml-auto p-2 item-price">'+ convertPrice(i.price) + ' </div> ' +
+                        '</div> ' +
+                        '<div class="p-2 item-ingredients">' + convertIngredients(i.ingredients) + '</div>' +
+                        '</div>' +  
+                        '</div>'
+                    );
+                    $(itemList).children('.collapse').children('.card-body').append(item);
+                });
+                groupIndex++;
+            });
+        });
+    }  
+
 }
 
 function request(url, callback) {
@@ -48,4 +83,19 @@ function request(url, callback) {
         }
     }
     xhr.send();
+}
+
+function groupBy(xs, key) {
+    return xs.reduce(function (rv, x) {
+        (rv[x[key]] = rv[x[key]] || []).push(x);
+        return rv;
+    }, {});
+};
+
+function convertPrice(intPrice) {    
+    return "R$ " + intPrice + ",00";    
+}
+
+function convertIngredients(ingredients) {
+    return (ingredients.join(' '));    
 }

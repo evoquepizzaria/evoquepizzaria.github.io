@@ -8,6 +8,22 @@
         "price": "40"
     },
     {
+        "id" : 0,
+        "name" : "Pizza 0",
+        "ingredients": ["A", "B", "C"],
+        "category" : "Queijos e Vegetais",
+        "isPromotional": false,
+        "price": "40"
+    },
+    {
+        "id" : 0,
+        "name" : "Pizza 0",
+        "ingredients": ["A", "B", "C"],
+        "category" : "Queijos e Vegetais",
+        "isPromotional": false,
+        "price": "40"
+    },
+    {
         "id" : 1,
         "name" : "Pizza 0",
         "ingredients": ["A", "B", "C"],        

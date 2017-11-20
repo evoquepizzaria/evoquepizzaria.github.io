@@ -23,48 +23,48 @@
 
 <body>
 
-    <nav class="navbar sticky-top navbar-expand-sm navbar-dark" style="background-color: #000">
+    <nav id="nav" class="navbar sticky-top navbar-expand-sm navbar-dark" style="background-color: #000">
 
         <a class="navbar-brand" href="#">
             <img src="/images/logo.jpeg" width="200" height="42" alt="">
         </a>
 
-        <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navBarNav" aria-controls="navBarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-left" type="button" aria-controls="navBarNav" aria-expanded="false" data-target=".navbar-collapse"
+            data-toggle="collapse" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-
         <div class="collapse navbar-collapse" id="navBarNav">
             <ul class="navbar-nav mr-auto">
+                <li  class="nav-item">
+                    <a href="#phone-list" class="nav-link"> INICIO </a>
+                </li>                
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> INICIO </a>
+                    <a href="#sobre" class="nav-link"> SOBRE </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link"> SOBRE </a>
+                    <a href="#cardapio" class="nav-link"> CARDÁPIO </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#menu" class="nav-link"> CARDÁPIO </a>
-                </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="#" class="nav-link"> GALERIA </a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="#contato" class="nav-link"> CONTATO </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link"> CONTATO</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"> FAQ </a>
+                    <a href="#localizacao" class="nav-link"> LOCALIZAÇÃO </a>
                 </li>
             </ul>
-            <span class="navbar-text">
+
+            <div class="navbar-text">
                 Rua Américo Brasiliense, 33 - Centro - São Bernardo do Campo/SP
-            </span>
+            </div>
+
         </div>
 
     </nav>
 
-    <nav class="container-fluid" id="phone-list" style="background-color: #000">
-        <!-- <div class="container" id="phone-list"> -->
+    <nav class="container-fluid" id="phone-list" style="background-color: #000">        
         <div class="row">
             <div class="col">
                 <div class="phone-number"> 2374 0105 </div>
@@ -79,8 +79,8 @@
                 </div>
             </div>
         </div>
-        </div>
-    </nav>
+    </nav>    
+    
 
     <div class="container" id='carousel'>
 
@@ -110,7 +110,7 @@
     </div>
 
 
-    <div class="container" id="about">
+    <div class="container" id="sobre">
         <div class="row">
             <div class="col wrapper">
                 <article>
@@ -127,7 +127,7 @@
         </div>
     </div>
 
-    <div class="container" id="menu">
+    <div class="container" id="cardapio">
         <div class="row">
             <div class="col wrapper">
                 <h1 class="text-center">CARDAPIO</h1>
@@ -135,81 +135,12 @@
                     <p class="p-2"> Clique para baixar o nosso cardápio!</p>
                     <button class="p-2 ml-auto btn btn-success download-button">BAIXAR</button>
                 </div>
+
                 <div id="accordion" role="tablist">
-                    <div class="card">
-                        <div class="card-header" role="tab" id="headingOne">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    PIZZAS 1
-                                </a>
-                            </h5>
-                        </div>
+                </div>
 
-                        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                <div class="menu-container">
-                                    <!-- <div class="row"> -->
-                                    <div class="d-flex">
-                                        <div class="p-2 item-name"> 00 - NOME DA PIZZA </div>
-                                        <div class="ml-auto p-2 item-price"> RS00,00 </div>
-                                    </div>
-                                    <div class="p-2 item-ingredients"> (INGREDIENTES) </div>
-                                    <!-- </div> -->
-
-                                </div>
-                                <div class="menu-item">
-                                    00 - NOME DA PIZZA - (INGREDIENTES) - RS00,00
-                                </div>
-                                <div class="menu-item">
-                                    00 - NOME DA PIZZA - (INGREDIENTES) - RS00,00
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" role="tab" id="headingTwo">
-                        <h5 class="mb-0">
-                            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                PIZZAS 2
-                            </a>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                            et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                            synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" role="tab" id="headingThree">
-                        <h5 class="mb-0">
-                            <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                PIZZAS 3
-                            </a>
-                        </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                            et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                            synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
             </div>
-
-
         </div>
-    </div>
 
     </div>
 
@@ -219,7 +150,7 @@
     <!-- Fotos tiradas que estão no facebook (implementar para que seja automatica a adição de imagens futuramente) -->
 
 
-    <div class="container" id="contact">
+    <div class="container" id="contato">
         <div class="row">
             <div class="col wrapper">
                 <article>
@@ -227,9 +158,9 @@
                     <p>Domingos, Terças, Quartas e Quintas das 18:00 as 23:00 </p>
                     <p>Sextas e Sábados das 18:00 as 00:00</p>
                     <p>TELEFONES</p>
-                    <p>(11) 0000-0000</p>
-                    <p>(11) 0000-0000</p>
-                    <p>Whatsapp : (11) 0000-0000</p>
+                    <p>(11) 2374-0105</p>
+                    <p>(11) 2356-0419</p>
+                    <p>Whatsapp : (11)9 8118-3595</p>
                     <p>EMAIL</p>
                     <p></p>
                 </article>
@@ -270,10 +201,8 @@
             </div>
         </div>
     </div>
-    <!-- CONTATO -->
-    <!-- Exibe menu que possibilita a escolha entre Duvidas, Sugestões, Reclamações e Corpo de mensagem-->
-    <!-- LOCALIZAÇÃO -->
-    <div class="container" id="location">
+
+    <div class="container" id="localizacao">
         <div class="row">
             <div class="col wrapper">
                 <h1 class="text-center">LOCALIZAÇÃO</h1>
@@ -345,6 +274,9 @@
 
         </footer>
     </div>
+
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
@@ -367,6 +299,21 @@
         $("form").on('submit', function (e) {
             e.preventDefault();
         });
+
+        $('.navbar-collapse a').click(function () {
+            $(".navbar-collapse").collapse('hide');
+        });
+
+        var offset = 80;
+
+        $('.navbar li a').click(function (event) {
+            event.preventDefault();
+            $($(this).attr('href'))[0].scrollIntoView();
+            scrollBy(0, -offset);
+        });
+
+        
+
     </script>
 
 

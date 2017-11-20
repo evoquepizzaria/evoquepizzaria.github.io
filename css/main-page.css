@@ -6,7 +6,7 @@ body {
     background-color: rgb(145, 224, 161);
     display: flex;
     min-height: 100%;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 p {
