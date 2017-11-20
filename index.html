@@ -21,7 +21,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #000">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark" style="background-color: #000">
 
         <a class="navbar-brand" href="#">
             <img src="/images/logo.jpeg" width="200" height="42" alt="">
@@ -39,16 +39,16 @@
                     <a href="#" class="nav-link"> INICIO </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> SOBRE </a>
+                    <a href="#about" class="nav-link"> SOBRE </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> CARDÁPIO </a>
+                    <a href="#menu" class="nav-link"> CARDÁPIO </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link"> GALERIA </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> CONTATO</a>
+                    <a href="#contact" class="nav-link"> CONTATO</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link"> FAQ </a>
@@ -126,6 +126,11 @@
     </div>
 
     <!-- Inserir controles para navegação -->
+    <div class="container">
+
+
+    </div>
+
 
     <div class="container" id="about">
         <div class="row">
@@ -147,28 +152,91 @@
     <div class="container" id="menu">
         <div class="row">
             <div class="col wrapper">
-
-            
-            <article>
                 <h1>CARDAPIO</h1>
+                <p> Clique aqui para baixar o nosso cardápio
+                    <button class="btn btn-success">BAIXAR</button>
+                </p>
+                <div id="accordion" role="tablist">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    PIZZAS 1
+                                </a>
+                            </h5>
+                        </div>
 
-            </article>
-        </div>
+                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="menu-container">
+                                    <div class="menu-item">
+                                        <div class="item-id"> 00 - </div>
+                                        <div class="item-name"> NOME DA PIZZA - </div>
+                                        <div class="item-ingredients"> (INGREDIENTES) - </div>
+                                        <div class="item-price"> RS00,00 </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        00 - NOME DA PIZZA - (INGREDIENTES) - RS00,00
+                                    </div>
+                                    <div class="menu-item">
+                                        00 - NOME DA PIZZA - (INGREDIENTES) - RS00,00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingTwo">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    PIZZAS 2
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingThree">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    PIZZAS 3
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
 
     </div>
 
 
-    <!-- CARDÁPIO -->
-    <!-- Possibilita o download do cardápio em PDF -->
-    <!-- Mostra o cardápio com informações em JSON de cada pizza -->
-    <!-- Sugestões de sabores -->
-    <!-- Imagem contento marca dos produtos que trabalham -->
-
     <!-- GALERIA -->
     <!-- Página separada para não sobrecarregar página inicial -->
     <!-- Fotos tiradas que estão no facebook (implementar para que seja automatica a adição de imagens futuramente) -->
-
 
 
     <div class="container" id="contact">
@@ -176,32 +244,49 @@
             <div class="col wrapper">
                 <article>
                     <h1>ATENDIMENTO</h1>
-                    <p>De segunda a sexta das 00:00 as 00:00</p>
-                    <p>Sabados, Domingos e Feriados das 00:00 as 00:00</p>
+                    <p>Domingos, Terças, Quartas e Quintas das 18:00 as 23:00 </p>
+                    <p>Sextas e Sábados das 18:00 as 00:00</p>
+                    <p>TELEFONES</p>
+                    <p>(11) 0000-0000</p>
+                    <p>(11) 0000-0000</p>
+                    <p>Whatsapp : (11) 0000-0000</p>
+                    <p>EMAIL</p>
+                    <p></p>
                 </article>
             </div>
 
             <div class="col wrapper">
                 <h1>CONTATO</h1>
                 <form action="" method="post">
+
                     <div class="form-group">
                         <label for="form-name"></label>
                         <input class="form-control" type="text" id="form-name" name="form-name" placeholder="Nome / Apelido" />
                     </div>
+
                     <div class="form-group">
                         <label for="form-email"></label>
                         <input class="form-control" type="email" id="form-email" name="form-email" placeholder="Email" />
                     </div>
+
                     <div class="form-group">
                         <label for="form-phone"></label>
                         <input class="form-control" type="text" id="form-phone" name="form-name" placeholder="Telefone para contato" />
                     </div>
+
                     <div class="form-group">
                         <label for="form-message"></label>
                         <input class="form-control" type="textarea" id="form-message" name="form-name" placeholder="Mensagem" />
                     </div>
+
                     <button id="submit-button" class="btn btn-primary">ENVIAR</button>
+
                 </form>
+
+                <div class="alert alert-success" role="alert" style="display: none;">
+                    Obrigado, sua mensagem foi enviada!
+                </div>
+
             </div>
         </div>
     </div>
@@ -214,82 +299,80 @@
                 <h1>LOCALIZAÇÃO</h1>
                 <p> Estamos localizados no endreço: RUA Américo Brasiliense, 33 São Bernardo do Campo/SP CEP 09715-020 </p>
                 <p>A 1 minutos da parada de trólebus Lauro Gomes, travessa da avenida Faria Lima</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.967545503369!2d-46.554571684561964!3d-23.71285298460788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4181aa07dbb3%3A0xca0118bad89376ee!2sR.+Am%C3%A9rico+Brasiliense%2C+33+-+Centro%2C+S%C3%A3o+Bernardo+do+Campo+-+SP%2C+09715-020!5e0!3m2!1spt-BR!2sbr!4v1511067426632"
-                    frameborder="0" style="border:0" allowfullscreen>
-                </iframe>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.967545503369!2d-46.554571684561964!3d-23.71285298460788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4181aa07dbb3%3A0xca0118bad89376ee!2sR.+Am%C3%A9rico+Brasiliense%2C+33+-+Centro%2C+S%C3%A3o+Bernardo+do+Campo+-+SP%2C+09715-020!5e0!3m2!1spt-BR!2sbr!4v1511067426632"
+                        frameborder="0" style="border:0" allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </div>
-    </div>   
+    </div>
 
-
-    <!-- <div class="container"> -->
-
-    <footer class="container">
-        <div class="row">
-            <div class="col-4">
-                <div class="d-flex flex-row justify-content-center">
-                    <div class="social-title">
-                        Confira nosso trabalho nas rede sociais:
+    <div style="width:100%; background: black; margin-top:1%;">
+        <footer class="container footer">
+            <div class="row">
+                <div class="col-4">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="social-title">
+                            Confira nosso trabalho nas rede sociais:
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="social-button">
+                            <a href="https://www.facebook.com/EvoquePizza/" target="_blank">
+                                <img class="social-icon" src="/icons/facebook.png" href="#" />
+                            </a>
+                        </div>
+                        <div class="social-button">
+                            <a href="https://www.instagram.com/pizzariaevoque/" target="_blank">
+                                <img class="social-icon" src="/icons/instagram.png" href="#" />
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="d-flex flex-row justify-content-center">
-                    <div class="social-button">
-                        <a href="https://www.facebook.com/EvoquePizza/" target="_blank">
-                            <img class="social-icon" src="/icons/facebook.png" href="#" />
+
+                <div class="col-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="ifood-title">
+                            Peça também pelo
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.ifood.com.br/delivery/sao-bernardo-do-campo-sp/evoque-pizzaria--hamburgueria-centro" target="_blank">
+                            <img class="ifood-logo" src="/icons/ifood.png" alt="ifood" />
                         </a>
                     </div>
-                    <div class="social-button">
-                        <a href="https://www.instagram.com/pizzariaevoque/" target="_blank">
-                            <img class="social-icon" src="/icons/instagram.png" href="#" />
-                        </a>
+                </div>
+
+
+
+                <div class="col-4">
+                    <div id="credit-cards">
+                        <img class="credit-card" src="/icons/visa.png" alt="">
+                        <img class="credit-card" src="/icons/master-card.ico" alt="">
                     </div>
                 </div>
+
             </div>
 
-            <div class="col-4">
-                <div class="d-flex justify-content-center">
-                    <div class="ifood-title">
-                        Peça também pelo
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <a href="https://www.ifood.com.br/delivery/sao-bernardo-do-campo-sp/evoque-pizzaria--hamburgueria-centro" target="_blank">
-                        <img class="ifood-logo" src="/icons/ifood.png" alt="ifood" />
-                    </a>
+
+            <div class="row">
+                <div class="col-12 copyright">
+                    <p> Copyright &copy 2017 Evoque Pizzaria, Todos os direitos reservados</p>
                 </div>
             </div>
 
 
-
-            <div class="col-4">
-                <div id="credit-cards">
-                    <img class="credit-card" src="/icons/visa.png" alt="">
-                    <img class="credit-card" src="/icons/master-card.ico" alt="">
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="row">
-            <div class="col-12">
-                <span>
-                    Copyright &copy 2017 Evoque Pizzaria, Todos os direitos reservados
-                </span>
-            </div>
-        </div>
-
-
-    </footer>
-
-    <!-- </div> -->
-
+        </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+
+    <script src="/js/scripts.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109895739-1"></script>
