@@ -1,7 +1,18 @@
 [
     {
-        "title" : "",
-        "link": "",
-        "description": ""
+        "title" : "Pizzas com borda Vulcão!",
+        "link": "/images/carrossel/borda_vulcao.jpg",
+        "description": "Venha experimentar nossas bordas vulcão, aproveite"
+    },
+    {
+        "title" : "Pizzas Doces!",
+        "link": "/images/carrossel/pizza_doce.jpg",
+        "description": "Venha experimentar nossas pizzas doces, várias combinações"
+    },
+    {
+        "title" : "Hamburgeres e Acompanhamentos",
+        "link": "/images/carrossel/hamburger.jpg",
+        "description": "Hamburgeres. Hot-Dogs e Acompanhamentos"
     }
+    
 ]
