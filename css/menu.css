@@ -1,0 +1,30 @@
+@media screen and (min-width : 760px) {
+    .item-id, .item-name, .item-price {
+        font-size: 0.1em;    
+    }    
+}
+
+.download-button {
+    height: 3rem;
+    margin-right: 1%;
+}
+
+.menu-container {
+
+}
+
+.menu-item {
+    /* display: inline-block; */
+}
+
+.item-id, .item-name, .item-price {
+    font-size: 1.2em;    
+    color: rgb(209, 24, 24);        
+}
+
+.item-ingredients {
+    font-size: 0.8em;    
+    margin-left: 5%;    
+    margin-top: -1.6em;
+}
+

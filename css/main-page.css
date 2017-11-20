@@ -9,6 +9,11 @@ body {
     flex-direction: column;
 }
 
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .phone-number {        
     font-size: 42px;        
     text-align: center;
