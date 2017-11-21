@@ -2,8 +2,6 @@
     width: 100px;    
 }
 
-
-
 .navbar-text {
     display: none;
 }
@@ -19,7 +17,31 @@
 
 .phone-number > span {
     font-size: 11px;
-}        
+}
+
+.nav-button-wrapper {    
+    height: 7rem;    
+    margin-top: 15%;
+    margin-bottom: 20%;
+}
+
+.nav-button {    
+    height: 5rem;    
+    width: 30%;
+    border: 3px solid grey;    
+    display: inline-block;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+#carousel {    
+    width: 100%;    
+    padding: 0%;
+
+}
+
+.carousel-item img{    
+    height: 12rem;
+}
 
 .credit-card {
     width: 24px;
