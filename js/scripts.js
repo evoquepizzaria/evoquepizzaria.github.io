@@ -5,7 +5,8 @@ $(document).ready(function (e) {
 
 
 function loadCarousel() {
-    request('/data/carrossel.json', function (data) {
+    // request('/data/carrossel.json', function (data) {
+    request('https://evoque-pizzaria.firebaseio.com/teste.json', function (data) {
         var slideList = [];
         var indicators = [];
         var carousels = JSON.parse(data);
