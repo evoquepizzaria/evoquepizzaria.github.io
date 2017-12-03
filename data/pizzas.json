@@ -40,6 +40,7 @@
         "price": 51
     },
     {
+<<<<<<< HEAD
         "id" : 6,
         "name" : "Catupiry",
         "ingredients": ["Catupiry Original derretido"],
@@ -204,9 +205,19 @@
         "name" : "Vegetariana", 
         "ingredients": ["Brócolis", "Ervilha", "Milho", "Mussarela", "Tomate Seco"],
         "category" : "Pizzas: Queijos e Vegetais",
+=======
+        "id" : 3,
+        "name" : "Pizza 1231546",
+        "ingredients": ["A", "B", "C"],        
+        "category" : "Peixes e Frutos do Mar",
+>>>>>>> 5fb36d240862d511523c5f1ce3736bf7936005cf
         "isPromotional": false,
         "price": 41
     }
+<<<<<<< HEAD
     
     
 ]
+=======
+]
+>>>>>>> 5fb36d240862d511523c5f1ce3736bf7936005cf

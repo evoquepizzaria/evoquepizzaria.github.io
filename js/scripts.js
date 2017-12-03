@@ -5,7 +5,8 @@ $(document).ready(function (e) {
 
 
 function loadCarousel() {
-    request('/data/carrossel.json', function (data) {
+    // request('/data/carrossel.json', function (data) {
+    request('https://evoque-pizzaria.firebaseio.com/teste.json', function (data) {
         var slideList = [];
         var indicators = [];
         var carousels = JSON.parse(data);
@@ -100,5 +101,10 @@ function convertPrice(intPrice) {
 }
 
 function convertIngredients(ingredients) {
+<<<<<<< HEAD
     return (ingredients.join(' '));
 }
+=======
+    return (ingredients.join(' '));    
+}
+>>>>>>> 5fb36d240862d511523c5f1ce3736bf7936005cf
