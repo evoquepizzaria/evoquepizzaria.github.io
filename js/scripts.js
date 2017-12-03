@@ -101,10 +101,5 @@ function convertPrice(intPrice) {
 }
 
 function convertIngredients(ingredients) {
-<<<<<<< HEAD
     return (ingredients.join(' '));
 }
-=======
-    return (ingredients.join(' '));    
-}
->>>>>>> 5fb36d240862d511523c5f1ce3736bf7936005cf
