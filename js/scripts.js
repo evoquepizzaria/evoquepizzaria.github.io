@@ -28,13 +28,16 @@ function loadCarousel() {
 }
 
 function loadMenu(plates) {
-    var requestList = ['pizzas', 'lanches', 'bebidas', 'bordas'];
+    // var requestList = ['pizzas', 'lanches', 'bebidas', 'bordas'];
+    var requestList = ['pizzas']
+    var database = 'https://evoque-pizzaria.firebaseio.com/'
     var menuList = [];
     var groupIndex = 1;
     var headings = []
     for (var i = 0; i < requestList.length; i++) {
         var currentRequest = requestList[i];
-        request('/data/' + currentRequest + '.json', function (data) {
+        // request('/data/' + currentRequest + '.json', function (data) {            
+        request(database + 'cardapio/' + currentRequest + '.json', function (data) {
             var dataList = JSON.parse(data);
             var grouped = groupBy(dataList, 'category');
             Object.keys(grouped).forEach(function (c, i) {
@@ -42,8 +45,8 @@ function loadMenu(plates) {
                 var heading = $('<div></div>', { "class": "card-header", "id": "heading-" + groupIndex, "role": "tab" });
                 heading.append($('<h5 class="mb-0"> <a data-toggle="collapse" href="#collapse-' + groupIndex + '" "aria-expanded="false" aria-controls="collapse-1">' + c + ' </a></h5>'));
                 $('#accordion').append(heading);
-                var itemList = $('<div/>', { "class" : "item-list"});
-                itemList.append(' '+
+                var itemList = $('<div/>', { "class": "item-list" });
+                itemList.append(' ' +
                     '<div id="collapse-' + groupIndex + '" class="collapse" role="tabpanel" aria-labelledby="heading-' + groupIndex + '" data-parent="#accordion">' +
                     '<div class="card-body">' +
                     '</div>' +
@@ -54,10 +57,10 @@ function loadMenu(plates) {
                     item.html(
                         '<div class="d-flex"> ' +
                         '<div class="p-2 item-name">' + i.id + ' ' + i.name + ' </div>' +
-                        '<div class="ml-auto p-2 item-price">'+ convertPrice(i.price) + ' </div> ' +
+                        '<div class="ml-auto p-2 item-price">' + convertPrice(i.price) + ' </div> ' +
                         '</div> ' +
                         '<div class="p-2 item-ingredients">' + convertIngredients(i.ingredients) + '</div>' +
-                        '</div>' +  
+                        '</div>' +
                         '</div>'
                     );
                     $(itemList).children('.collapse').children('.card-body').append(item);
@@ -65,7 +68,7 @@ function loadMenu(plates) {
                 groupIndex++;
             });
         });
-    }  
+    }
 
 }
 
@@ -92,10 +95,10 @@ function groupBy(xs, key) {
     }, {});
 };
 
-function convertPrice(intPrice) {    
-    return "R$ " + intPrice + ",00";    
+function convertPrice(intPrice) {
+    return "R$ " + intPrice + ",00";
 }
 
 function convertIngredients(ingredients) {
-    return (ingredients.join(' '));    
+    return (ingredients.join(' '));
 }

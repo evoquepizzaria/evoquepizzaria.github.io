@@ -1,50 +1,212 @@
 [
     {
-        "id" : 0,
-        "name" : "Pizza 0",
-        "ingredients": ["A", "B", "C"],
-        "category" : "Queijos e Vegetais",
-        "isPromotional": false,
-        "price": "40"
-    },
-    {
-        "id" : 0,
-        "name" : "Pizza 0",
-        "ingredients": ["A", "B", "C"],
-        "category" : "Queijos e Vegetais",
-        "isPromotional": false,
-        "price": "40"
-    },
-    {
-        "id" : 0,
-        "name" : "Pizza 0",
-        "ingredients": ["A", "B", "C"],
-        "category" : "Queijos e Vegetais",
-        "isPromotional": false,
-        "price": "40"
-    },
-    {
         "id" : 1,
-        "name" : "Pizza 0",
-        "ingredients": ["A", "B", "C"],        
-        "category" : "Carne e Calabresa",
+        "name" : "Alho",
+        "ingredients": ["Mussarela", "Alho Gratinado, Fatias de Tomate"],
+        "category" : "Pizzas: Queijos e Vegetais",
         "isPromotional": false,
-        "price": "40"
+        "price": 32
     },
     {
         "id" : 2,
-        "name" : "Pizza 0",
-        "ingredients": ["A", "B", "C"],        
-        "category" : "Frango e Lombo",
+        "name" : "À Moda do Chef",
+        "ingredients": ["Presunto", "Calabresa", "Catupiry", "Mussarela", "Fatias de Tomate"],
+        "category" : "Pizzas: Queijos e Vegetais",
         "isPromotional": false,
-        "price": "40"
+        "price": 42
     },
     {
         "id" : 3,
-        "name" : "Pizza 0",
-        "ingredients": ["A", "B", "C"],        
-        "category" : "Peixes e Frutos do Mar",
+        "name" : "Brócolis",
+        "ingredients": ["Brócolis", "Catupiry", "Mussarela", "Bacon"],
+        "category" : "Pizzas: Queijos e Vegetais",
         "isPromotional": false,
-        "price": "40"
+        "price": 39
+    },
+    {
+        "id" : 4,
+        "name" : "Búfala",
+        "ingredients": ["Mussarela de Búfula derretida", "Fatias de Tomate"],        
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 46
+    },
+    {
+        "id" : 5,
+        "name" : "Búfula Especial",
+        "ingredients": ["Mussarela de Búfula derretida", "Gorgonzola", "Tomate Seco"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 51
+    },
+    {
+        "id" : 6,
+        "name" : "Catupiry",
+        "ingredients": ["Catupiry Original derretido"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 36
+    },
+    {
+        "id" : 7,
+        "name" : "Cinco Queijos",
+        "ingredients": ["Mussarela", "Catupiry", "Provolone", "Parmesão", "Gorgonzola"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 46
+    },
+    {
+        "id" : 8,
+        "name" : "Dois Queijos",
+        "ingredients": ["Mussarela derretida", "Catupiry"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 38
+    },
+    {
+        "id" : 9,
+        "name" : "Escarola",
+        "ingredients": ["Escarola", "Cebola", "Mussarela", "Bacon", "Parmesão"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 40
+    },
+    {
+        "id" : 10,
+        "name" : "Escarola Especial",
+        "ingredients": ["Escarola", "Cebola", "Mussarela", "Anchovas"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 44
+    },
+    {
+        "id" : 11,
+        "name" : "Gorgonzola",
+        "ingredients": ["Gorgonzola","Fatias de Tomate"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 42
+    },
+    {
+        "id" : 12,
+        "name" : "Jurubatuba",
+        "ingredients": ["Mussarela", "Presunto", "Palmito", "Catupiry"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 41
+    },
+    {
+        "id" : 13,
+        "name" : "Light",
+        "ingredients": ["Peito de Peru", "Champignon", "Fatias de Tomate", "Mussarela de Búfula"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 56 
+    },
+    {
+        "id" : 14,
+        "name" : "Marguerita",
+        "ingredients": ["Mussarela", "Fatias de Tomate", "Molho", "Manjericão", "Parmesão"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 39
+    },
+    {
+        "id" : 15,
+        "name" : "Marguerita II", 
+        "ingredients": ["Mussarela", "Fatias de Tomate", "Molho", "Manjericão", "Gorgonzola"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 42
+    },
+    {
+        "id" : 16,
+        "name" : "Milho", 
+        "ingredients": ["Mussarela derretida", "Milho"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 32
+    },
+    {
+        "id" : 17,
+        "name" : "Mussarela", 
+        "ingredients": ["Mussarela derretida", "Fatias de Tomate"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 32
+    },
+    {
+        "id" : 18,
+        "name" : "Namorado", 
+        "ingredients": ["Mussarela", "Catupiry", "Palmito"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 40
+    },
+    {
+        "id" : 19,
+        "name" : "Napolitana", 
+        "ingredients": ["Mussarela", "Fatias de Tomate", "Molho", "Parmesão"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 39
+    },
+    {
+        "id" : 20,
+        "name" : "Palmito", 
+        "ingredients": ["Palmito", "Catupiry"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 39
+    },
+    {
+        "id" : 21,
+        "name" : "Peru Especial", 
+        "ingredients": ["Peito de Peru", "Catupiry", "Bacon", "Batata Palha"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 45
+    },
+    {
+        "id" : 22,
+        "name" : "Quatro Queijos", 
+        "ingredients": ["Mussarela", "Catupiry", "Provolone", "Parmesão"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 41
+    },
+    {
+        "id" : 23,
+        "name" : "Rúcula", 
+        "ingredients": ["Mussarela derretida", "Rúcula Fresca", "Tomate Seco"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 38
+    },
+    {
+        "id" : 24,
+        "name" : "Rúcula Especial", 
+        "ingredients": ["Mussarela de Búfala", "Rúcula Fresca", "Tomate Seco"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 48
+    },
+    {
+        "id" : 25,
+        "name" : "Três Queijos", 
+        "ingredients": ["Mussarela derretida", "Catupiry", "Provolone"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 39
+    },
+    {
+        "id" : 26,
+        "name" : "Vegetariana", 
+        "ingredients": ["Brócolis", "Ervilha", "Milho", "Mussarela", "Tomate Seco"],
+        "category" : "Pizzas: Queijos e Vegetais",
+        "isPromotional": false,
+        "price": 41
     }
+    
+    
 ]
