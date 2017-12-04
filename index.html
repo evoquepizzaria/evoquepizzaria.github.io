@@ -107,15 +107,18 @@
     <div class="container">
 
         <div class="nav-button-wrapper">
-            <div class="nav-button">
-
-            </div>
-            <div class="nav-button">
-
-            </div>
-            <div class="nav-button">
-
-            </div>
+            <a href="#cardapio" class="nav-button">
+                <img src="/icons/restaurant.svg" alt="">
+                <span> CARDAPIO </span>
+            </a>
+            <a href="#contato" class="nav-button">
+                <img src="/icons/phone.svg" alt="">
+                <span>ATENDIMENTO</span>
+            </a>
+            <a href="#localizacao" class="nav-button">
+                <img src="/icons/location.svg" alt="">
+                <span> LOCALIZAÇÃO </span>
+            </a>
         </div>
 
     </div>
@@ -127,11 +130,10 @@
                 <article>
                     <h1 class="text-center">QUEM SOMOS</h1>
                     <p>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum."
+                        Fundadada em 2017, a Pizzaria Evoque reune as três coisas o que o a população Paulista mais gosta: Pizza, Qualidade e Preço
+                        Justo! Localizada no centro de São Bernardo a pizzaria recebe seus clientes, ou melhor dizendo, amigos
+                        de braços abertos e com total atenção. Não conhece nosso trabalho ainda? Dẽ uma passadinha e experimente
+                        uma pizza e veja você mesmo.
                     </p>
                 </article>
             </div>
@@ -141,14 +143,8 @@
     <div class="container" id="cardapio">
         <div class="row">
             <div class="col wrapper">
-                <h1 class="text-center">CARDAPIO</h1>
-                <div class="d-flex">
-                    <p class="p-2"> Clique para baixar o nosso cardápio!</p>
-                    <button class="p-2 ml-auto btn btn-success download-button">BAIXAR</button>
-                </div>
-
-                <div id="accordion" role="tablist">
-                </div>
+                <h1 class="text-center">CARDÁPIO</h1>
+                <div id="accordion" role="tablist"></div>                
 
             </div>
         </div>
@@ -172,8 +168,10 @@
                     <p>(11) 2374-0105</p>
                     <p>(11) 2356-0419</p>
                     <p>Whatsapp : (11) 9 8118-3595</p>
-                    <!-- <p>EMAIL</p>
-                    <p></p> -->
+                    <p>EMAIL:
+                        <a href="mailto:evoquepizza@gmail.com?subject=Contato">evoquepizza@gmail.com</a>
+                    </p>
+                    <p></p>
                 </article>
             </div>
 
@@ -327,13 +325,16 @@
             $(".navbar-collapse").collapse('hide');
         });
 
-        var offset = 80;
+        var offset = 100;
 
-        $('.navbar li a').click(function (event) {
+        $('.navbar li a').click(onClickToScroll);
+        $('.nav-button').click(onClickToScroll);
+
+        function onClickToScroll(event) {
             event.preventDefault();
             $($(this).attr('href'))[0].scrollIntoView();
             scrollBy(0, -offset);
-        });
+        }
 
 
 

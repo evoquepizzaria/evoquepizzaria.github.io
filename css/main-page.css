@@ -14,6 +14,9 @@ p {
     margin-right: 5%;
 }
 
+.navbar-text {
+    font-size: 0.9rem;
+}
 .phone-number {        
     font-size: 42px;        
     text-align: center;
@@ -67,8 +70,10 @@ p {
 }
 
 
+
 #sobre, #cardapio, #contato {
     margin-bottom: 0.5%;
+    margin-top: 0.5%;
 }
 
 #sobre h1, #cardapio h1, #localizacao h1, #contato h1{
@@ -87,6 +92,10 @@ p {
 #contato form button{
     margin-top: 3%;
     margin-bottom: 5%;
+}
+
+.download-button {
+    color: white !important;    
 }
 
 
@@ -143,7 +152,7 @@ p {
     height: 17rem;
     padding: 1rem;
     margin-top: 1.5%;
-    margin-bottom: 1.5%;
+    margin-bottom: 2%;
 }
 
 .nav-button {
@@ -152,6 +161,22 @@ p {
     margin-left: 2%;
     width: 31%;
     border: 4px solid grey;    
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     box-shadow: 5px 5px 5px #888888;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-button img {
+    max-height: 65%;    
+    margin: 0 auto;
+    margin-top:3%;
+    width: 100%;
+}
+
+.nav-button > span{    
+    font-size: 1rem;    
+    width: 100%;
+    margin-top: 7%;
 }

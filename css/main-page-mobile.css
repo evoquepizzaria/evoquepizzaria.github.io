@@ -22,7 +22,7 @@
 .nav-button-wrapper {    
     height: 7rem;    
     margin-top: 15%;
-    margin-bottom: 20%;
+    margin-bottom: 22.5%;
 }
 
 .nav-button {    
@@ -31,6 +31,10 @@
     border: 3px solid grey;    
     display: inline-block;
     box-shadow: 5px 5px 5px #888888;
+}
+
+.nav-button > span {    
+    font-size: 0.66rem;
 }
 
 #carousel {    
