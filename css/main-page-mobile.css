@@ -92,3 +92,12 @@
     margin-top: 10%;
 }
 
+.item-name, .item-price {
+    font-size: 0.85rem !important;    
+}
+
+.item-ingredients{ 
+    font-size: 0.7rem !important;    
+    
+}
+

@@ -56,7 +56,7 @@ function loadMenu(plates) {
                     var item = $('<div/>', { "class": "menu-container" });
                     item.html(
                         '<div class="d-flex"> ' +
-                        '<div class="p-2 item-name">' + i.id + ' ' + i.name + ' </div>' +
+                        '<div class="p-2 item-name">' + (i.id < 10 ? '0' + i.id : i.id  ) + ' -' + i.name + ' </div>' +
                         '<div class="ml-auto p-2 item-price">' + convertPrice(i.price) + ' </div> ' +
                         '</div> ' +
                         '<div class="p-2 item-ingredients">' + convertIngredients(i.ingredients) + '</div>' +
